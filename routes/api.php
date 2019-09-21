@@ -12,7 +12,7 @@ $api->version('v1', [
     ], function($api) {
         # 游客可以访问的接口
         # 用户注册
-        $api->get('users', 'UsersController@store')
+        $api->post('users', 'UsersController@store')
             ->name('api.users.store');
 
         # 需要 token 验证的接口
